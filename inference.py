@@ -7,7 +7,7 @@ from tensorflow.keras.applications.vgg16 import preprocess_input
 from tensorflow.keras.preprocessing.image import img_to_array,array_to_img
 from tensorflow.python import keras
 
-classes = ['Potato___Early_blight','Potato___Late_blight','Potato___healthy']
+classes = ['Leaf is infected by Early blight','Leaf is infected by Late blight','Leaf is healthy']
 model = keras.models.load_model('potato.h5')
 
 def predict(img_path):
